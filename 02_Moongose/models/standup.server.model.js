@@ -12,3 +12,6 @@ var standupSchema = new schema({
         default: Date.now
     }
 });
+
+// Export model
+module.exports = mongoose.model('Standup',standupSchema);
