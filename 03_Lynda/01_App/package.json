@@ -1,0 +1,20 @@
+{
+  "name": "rest-app",
+  "version": "1.0.0",
+  "description": "https://www.lynda.com/Node-js-tutorials/Install-Node-Express/633869/671241-4.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Costa Ivo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.14.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
