@@ -4,7 +4,7 @@
   "description": "https://www.lynda.com/Node-js-tutorials/Install-Node-Express/633869/671241-4.html",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon ./index.js --exec babel-node -e js",
+    "start": "nodemon ./index.js --exec babel-node -e js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Costa Ivo",
@@ -12,6 +12,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "mongoose": "^5.0.0-rc0",
     "nodemon": "^1.14.6"
   },
   "devDependencies": {
