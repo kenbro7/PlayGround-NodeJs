@@ -107,12 +107,24 @@ router.get('/current', auth.required, (req, res, next) => {
     payload: { id }
   } = req;
 
+  console.log(req.payload);
+
   return Users.findById(id).then(user => {
     if (!user) {
       return res.sendStatus(400);
     }
 
     return res.json({ user: user.toAuthJSON() });
+  });
+});
+
+router.get('/all', auth.required, (req, res, next) => {
+  return Users.find({}, { email: 1 }).then(users => {
+    if (!users) {
+      res.sendStatus(400);
+    }
+
+    return res.json({ users });
   });
 });
 
